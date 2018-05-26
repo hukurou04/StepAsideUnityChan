@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CoinController : MonoBehaviour {
 
+
 	// Use this for initialization
 	void Start () {
 		//回転を開始する角度を設定
@@ -14,5 +15,6 @@ public class CoinController : MonoBehaviour {
 	void Update () {
 		//回転
 		this.transform.Rotate(0, 3, 0);
+
 	}
 }

@@ -13,7 +13,10 @@ public class ItemDestory : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (transform.position.z < unitychan.transform.position.z) {
+		Vector3 tmp = GameObject.Find ("unitychan").transform.position;
+		float z = tmp.z - 10;
+
+		if (transform.position.z < z) {
 			Destroy (gameObject);
 		}
 	}
